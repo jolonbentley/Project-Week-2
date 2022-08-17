@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    height: 100vh;
+    background-color: rgb(255, 246, 246);
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'nav nav nav'
+    'main main main'
+    'footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px 1fr 80px;
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 70px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #012169;
+    border: #012169;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+}
+
+li:hover {
+    color: #C8102E;
+    cursor: pointer;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: #012169;
+    border: #012169;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+}
+
+h1 {
+    display: inline-block;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 42px;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1px;
+    text-align: center;
+    font-weight: 550;
+    color: rgb(77, 77, 77);
+}
+
+.logo {
+    display:block;
+    float: right;
+    height: 40px;
+    width: 100px;
+    padding-left: 10px;
+}
+
+.menu {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24px;
+    line-height: 7.5px;
+}
+
+.news {
+    display: grid;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.news-columns {
+    padding: 50px
+}
+
+.news-images {
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 400px;
+    height: 400px;
+}
+
+.titles {
+    padding-top: 10px;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 800;
+    width: 400px;
+}
+
+.descriptions {
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 400px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0072b1;
+    color: white;
+}
+
+.fa-instagram {
+    background: #8a3ab9;
+    color: white;
+}
